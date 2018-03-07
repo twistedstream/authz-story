@@ -5,4 +5,4 @@ request.get({
   json: true
 })
   .then(projects => console.log('Projects:\n', projects))
-  .catch(err => console.error('ERROR:', err));
+  .catch(err => console.error('ERROR:', err.message ? err.message : err));
