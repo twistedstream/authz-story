@@ -1,19 +1,19 @@
-# Terms
+# Terminology
 
 Throughout the story we will introduce specific terms. We will collect those terms here for easy reference:
 
-## Resource
+### Resource
 
-Any physically or virtual component of limited availability within a computer or information management system.
+Any physical or virtual component of limited availability within a computer or information management system.
 
-## Resource Server
+### Resource Server
 
 A service that provides access to [resources](#resource).
 
-## Client
+### Client
 
 A consumer of a [resource server](#resource-server).
 
-## Access Control
+### Access Control
 
 The selective restriction of access to a [resource](#resource).
