@@ -1,0 +1,12 @@
+{
+  "name": "authz-story",
+  "private": true,
+  "scripts": {},
+  "author": "twistedstream",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-auth0-base": "^13.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
