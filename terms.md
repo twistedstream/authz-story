@@ -13,3 +13,7 @@ A service that provides access to [resources](#resource).
 ## Client
 
 A consumer of a [resource server](#resource-server).
+
+## Access Control
+
+The selective restriction of access to a [resource](#resource).
