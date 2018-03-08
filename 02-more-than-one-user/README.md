@@ -6,18 +6,18 @@ Enter: [Access Control](../terms.md#access-control)!
 
 ![](./diagram-01.png)
 
-To implement this in a simple way, Julie modifies [server.js](./server.js) to require that the client pass user credentials (username/password) via HTTP [Basic Authentication](https://tools.ietf.org/html/rfc7617). The access control logic then validate the credentials and returns just the projects owned by the authenticated user.
+To implement this in a simple way, Julie modifies [server.js](./server.js) to require that the client pass user credentials (username/password) via HTTP [Basic Authentication](https://tools.ietf.org/html/rfc7617). The access control logic then validates the credentials against a local [user.json](./user.json) file and returns only the projects owned by the authenticated user.
 
 Now when the [old client](../01-a-simple-resource-server/client.js) attempts to access the list of projects, an error is returned since no authentication is provided:
 
-```bash
+```sh
 $ node client.js
 ERROR: 401 - "Authenticaion required!"
 ```
 
 You can see the HTTP response in more detail using cURL:
 
-```bash
+```sh
 $ curl -i http://localhost:5000/projects
 HTTP/1.1 401 Unauthorized
 X-Powered-By: Express
@@ -31,14 +31,12 @@ Connection: keep-alive
 Authentication required
 ```
 
-The new [client.js](./client.js) therefore needs to ve modified to collect user credentials before making the call to the resource server. Julie makes this change and now Bob is able to fetch only his projects:
+The new [client.js](./client.js) therefore needs to be modified to collect user credentials before making the call to the resource server. Julie makes this change and now Bob is able to fetch only his projects:
 
-```bash
+```sh
 $ node client.js
 Username: bob
 Password:
 Projects:
  [ { name: 'Baz, Inc.', owner: 'bob' } ]
 ```
-
-Next: 

@@ -6,16 +6,18 @@ To keep our example simple (and easy to evolve), we'll represent Julie’s web a
 
 ![](./diagram-01.png)
 
-We’re using Node.js and JavaScript to build our example, and for now we just have a simple [server.js](./server.js) for the Resource Server and [client.js](./client.js) for the Client.
+We’re using Node.js and JavaScript to build our example, and for now we just have a simple [server.js](./server.js) for the Resource Server and [client.js](./client.js) for the Client. The Resource Server loads the list of projects via a local [projects.json](./projects.json) file.
 
 We can start the Resource Server:
-```bash
+
+```sh
 $ node server.js
 Resource Server listening on port 5000
 ```
 
 And run the Client, which calls the Resource Server and displays all the projects:
-```bash
+
+```sh
 $ node client.js
 Projects:
  [ { name: 'Foo, Inc.' }, { name: 'Bar, Inc.' } ]

@@ -1,0 +1,5 @@
+[
+  { "name": "Foo, Inc.", "owner": "julie" },
+  { "name": "Bar, Inc.", "owner": "julie" },
+  { "name": "Baz, Inc.", "owner": "bob" }
+]

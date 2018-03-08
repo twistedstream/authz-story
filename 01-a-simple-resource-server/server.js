@@ -1,11 +1,7 @@
 const express = require('express');
+const projects = require('./projects.json');
 
 const app = express();
-
-const projects = [
-  { name: 'Foo, Inc.' },
-  { name: 'Bar, Inc.' }
-];
 
 app.get('/projects',
   (req, res) => res.json(projects));

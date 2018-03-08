@@ -1,18 +1,9 @@
 const express = require('express');
 const basicAuth = require('express-basic-auth');
+const projects = require('./projects.json');
+const users = require('./users.json');
 
 const app = express();
-
-const users = {
-  julie: 'pw1',
-  bob: 'pw2'
-};
-
-const projects = [
-  { name: 'Foo, Inc.', owner: 'julie' },
-  { name: 'Bar, Inc.', owner: 'julie' },
-  { name: 'Baz, Inc.', owner: 'bob' }
-];
 
 app.get('/projects',
   basicAuth({
