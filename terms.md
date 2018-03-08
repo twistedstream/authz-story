@@ -17,3 +17,15 @@ A consumer of a [resource server](#resource-server).
 ### Access Control
 
 The selective restriction of access to a [resource](#resource).
+
+### Authorization
+
+The evaluation of permission to access a [resource](#resource).
+
+### Authentication
+
+The process of confirming a user’s digital identity.
+
+### Authorization Policy
+
+A set of rules that govern [authorization](#authorization).
