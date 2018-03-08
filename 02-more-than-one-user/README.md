@@ -15,22 +15,6 @@ $ node client.js
 ERROR: 401 - "Authenticaion required!"
 ```
 
-You can see the HTTP response in more detail using cURL:
-
-```sh
-$ curl -i http://localhost:5000/projects
-HTTP/1.1 401 Unauthorized
-X-Powered-By: Express
-WWW-Authenticate: Basic realm="Example Projects"
-Content-Type: text/html; charset=utf-8
-Content-Length: 23
-ETag: W/"17-aCgQ3oG3a2vYjL7XV0dp8drclP4"
-Date: Thu, 08 Mar 2018 00:17:43 GMT
-Connection: keep-alive
-
-Authentication required
-```
-
 The new [client.js](./client.js) therefore needs to be modified to collect user credentials before making the call to the resource server. Julie makes this change and now Bob is able to fetch only his projects:
 
 ```sh

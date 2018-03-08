@@ -11,8 +11,6 @@ app.use(morgan('dev'));
 app.get('/projects',
   basicAuth({
     users,
-    challenge: true,
-    realm: 'Example Projects',
     unauthorizedResponse: req => (req.auth ? 'Bad credentials' : 'Authentication required')
   }),
   (req, res) => res.json(projects.filter(project => project.owner === req.auth.user)));
