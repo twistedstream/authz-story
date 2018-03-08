@@ -9,4 +9,3 @@ To explore access control and authorization, we will tell a story of a simple ap
 * [Chapter 1: A Simple Resource Server](./01-a-simple-resource-server)
 * [Chapter 2: More Than One User](./02-more-than-one-user)
 * [Terms](./terms.md)
-
