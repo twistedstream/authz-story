@@ -1,7 +1,10 @@
 const express = require('express');
+const morgan = require('morgan');
 const projects = require('./projects.json');
 
 const app = express();
+
+app.use(morgan('dev'));
 
 app.get('/projects',
   (req, res) => res.json(projects));

@@ -1,9 +1,12 @@
 const express = require('express');
+const morgan = require('morgan');
 const basicAuth = require('express-basic-auth');
 const projects = require('./projects.json');
 const users = require('./users.json');
 
 const app = express();
+
+app.use(morgan('dev'));
 
 app.get('/projects',
   basicAuth({
