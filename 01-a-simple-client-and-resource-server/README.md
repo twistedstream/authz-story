@@ -1,4 +1,4 @@
-# Chapter 1:  Simple Resource Server
+# Chapter 1: A Simple Client and Resource Server
 
 Our story begins like many applications do: with a small company. **Example, Inc**. provides project management services for other small businesses. They've only been in business themselves for a short time and have just a handful of projects and just one actual project manager: **Julie**. So she can easily see all the projects she’s working on, Julie decides to create an internal website that she and other employees can use to view the current list of projects. The website uses no access control since she currently manages all the projects.
 

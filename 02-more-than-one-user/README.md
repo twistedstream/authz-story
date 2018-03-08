@@ -6,7 +6,7 @@ Business at Example Inc. has picked up! There are now more projects than Julie c
 
 To implement this in a simple way, Julie modifies [server.js](./server.js) to require that the client pass user credentials (username/password) via HTTP [Basic Authentication](https://tools.ietf.org/html/rfc7617). Her new logic then validates the credentials against a local [user.json](./user.json) file and returns only the projects owned by the validated user.
 
-Now when the [old client](../01-a-simple-resource-server/client.js) attempts to access the list of projects, an error is returned since the client is doing nothing to satisfy the server's new requirements:
+Now when the [old client](../01-a-simple-client-and-resource-server/client.js) attempts to access the list of projects, an error is returned since the client is doing nothing to satisfy the server's new requirements:
 
 ```sh
 $ node client.js
